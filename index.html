@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="tab">
+
+        <div class="section">
+            <div class="contain" id="london">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+            </div>
+
+            <div class="contain" id="paris">
+                <h2>Paris</h2>
+                <p>Paris is the capital of France.</p>
+            </div>
+
+            <div class="contain" id="tokyo">
+                <h2>Tokyo</h2>
+                <p>Tokyo is the capital of Japan.</p>
+            </div>
+
+            <div class="contain" id="osolo">
+                <h2>Osolo</h2>
+                <p>Oslo is the capital of Norway.</p>
+            </div>
+        </div>
+
+
+
+        <div class="btn-div">
+            <h3 class="btn" id="btn1" onclick="vikku(london,paris,tokyo,osolo,this, 'red')">London</h3>
+            <h3 class="btn" id="btn2" onclick="vikku(paris, london, tokyo,osolo, this, 'aqua')">Paris</h3>
+            <h3 class="btn" id="btn3" onclick="vikku(tokyo,london,paris,osolo, this, 'rgb(159, 109, 109)')">Tokyo</h3>
+            <h3 class="btn" id="btn4" onclick="vikku(osolo,london,paris,tokyo, this, 'blueviolet')">Osolo</h3>
+
+        </div>
+    </div>
+
+
+    <script>
+
+
+        function vikku(a, b, c, d, x, color) {
+            a.style.display = "block"
+            b.style.display = "none"
+            c.style.display = "none"
+            d.style.display = "none"
+
+            btn = document.getElementsByClassName("btn");
+            for (let i = 0; i < btn.length; i++) {
+                btn[i].style.backgroundColor = "";
+            }
+
+
+            x.style.backgroundColor = color;
+
+
+
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>

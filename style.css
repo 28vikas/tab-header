@@ -1,0 +1,66 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.tab{
+    border: 2px solid red;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 70%;
+    width: 70%;
+    position: absolute;
+    top: 12%;
+    left: 13%; 
+}
+
+.btn-div{
+    display: flex;
+    width: 100%;
+}
+
+.section{
+    height: 100%;
+}
+
+.btn{
+   
+    padding: 20px;
+    width: 100%;
+    cursor: pointer;
+    border-bottom: 1px solid black;
+
+}
+
+.btn:hover{
+    background-color: rgb(134, 129, 91);
+}
+
+#paris , #tokyo, #osolo{
+    display: none;
+}
+
+
+#london{
+    background-color: red;
+}
+
+#paris{
+    background-color: aqua;
+}
+
+#osolo{
+    background-color: blueviolet;
+}
+
+#tokyo{
+    background-color: rgb(159, 109, 109);
+}
+
+.contain{
+    padding: 20px 30px;
+    height: 100%;
+}
